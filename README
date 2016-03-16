@@ -1,0 +1,35 @@
+﻿DE LEEUW Valérian & COUASNET Robin
+Gestion des arguments en lignes de commandes en C++ :
+
+Principe :
+Les classes, l'héritage, les méthodes et les variables sont décrites dans la documentation générée avec doxygen. 
+Pour la consulter il faut aller dans sol3/doc/html/ et ouvrir index.html avec votre navigateur internet.
+
+Utilisation :
+Tout d'abord, si vous le désirez, modifier le main.cpp pour ajouter des arguments ou modifier ceux déjà présents 
+(avec cl.add(arg, val)) dans le vecteur d'option. Les types qui peuvent être testés sont : int, float, bool, unsigned int, 
+double et vector. Par défaut il y a : pint, pfloat, puint, pstr, pbool (et cas particulier le type flag, expliqué plus bas).
+N'importe quelle option peut s'écrire en option courte (-bool true) ou longue (--pbool=true), sauf pour le vecteur qui ne
+lance qu'en option longue (ex: : --pstr=test1).
+
+Cas particulier : le booléen peut s'écrire sans valeur et donc sa valeur sera 'true', ce sera donc un flag. 
+
+Le programme s'utilise de la manière suivante :
+./bin/sol3 -pbool true (ou --pbool=true) --pint=12 (ou -pint 12) etc ... (expliqué plus en détails dans le manuel);
+Cas particulier :il existe un type fl flag, lancer le programme avec un -bool sans valeur.
+
+Commandes (se placer dans /sol3) :
+Compiler : make ;
+Executer : ./bin/sol3 -arg val ou --arg=val ;
+Génerer la documentation : make doc ;
+Nettoyer le dossier : make mrproper ;
+Compiler le fichier de test CPPUNIT : make test ;
+Executer le programme de test CPPUNIT : ./bin/test_sol3 ;
+
+Manuel :
+On peut accéder au man de la solution 3 lorsqu'on essaye d'exécuter le programme avec un mauvais argument, 
+ainsi on aura accès à la description : du programme, de l'exécution et des types.
+
+ 
+Point(s) fort(s) :
+1) Cette solution comporte une classe cppunit pour permettre de tester la fiabilité du programme ; 
