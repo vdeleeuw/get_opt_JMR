@@ -1,0 +1,134 @@
+\hypertarget{classFlagArgument}{\section{Flag\-Argument Class Reference}
+\label{classFlagArgument}\index{Flag\-Argument@{Flag\-Argument}}
+}
+
+
+{\ttfamily \#include $<$Flag\-Argument.\-h$>$}
+
+Inheritance diagram for Flag\-Argument\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFlagArgument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFlagArgument_aef16024973942f8be515c430e0a90c66}{Flag\-Argument} (std\-::string l\-Name, char s\-Name, bool $\ast$value, std\-::string descr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{classFlagArgument_a78f4e074860e7a358097e0b3814aab3f}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+void \hyperlink{classFlagArgument_ab663d3b44ceb27bb2cee27b91f13363d}{set\-Value} (bool val)
+\begin{DoxyCompactList}\small\item\em Mutateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classFlagArgument_a881f9de4811858463a4a981d3ebedb79}{test\-Value} (std\-::string val)
+\begin{DoxyCompactList}\small\item\em Mutateur et testeur. \end{DoxyCompactList}\item 
+void \hyperlink{classFlagArgument_ab79ece26d0d7462dd491ba0c67bb95d2}{display} ()
+\begin{DoxyCompactList}\small\item\em Afficheur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{classFlagArgument}{Flag\-Argument} hérite de la classe \hyperlink{classArgument}{Argument}. Les objets de cette classe stockent les informations d'un arguments de type booléen, elle posséde une variable qui contient sa valeur (m\-\_\-value). Elle dispose d'un constructeur et des méthodes qui permettent de définir et de tester la valeur d'une instance (\hyperlink{classFlagArgument_a881f9de4811858463a4a981d3ebedb79}{test\-Value()}), d'afficher les informations liées à une instance (\hyperlink{classFlagArgument_ab79ece26d0d7462dd491ba0c67bb95d2}{display()}), d'un accesseur (\hyperlink{classFlagArgument_a78f4e074860e7a358097e0b3814aab3f}{get\-Value()}) et d'un mutateur (\hyperlink{classFlagArgument_ab663d3b44ceb27bb2cee27b91f13363d}{set\-Value(bool)}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFlagArgument_aef16024973942f8be515c430e0a90c66}{\index{Flag\-Argument@{Flag\-Argument}!Flag\-Argument@{Flag\-Argument}}
+\index{Flag\-Argument@{Flag\-Argument}!FlagArgument@{Flag\-Argument}}
+\subsubsection[{Flag\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Argument\-::\-Flag\-Argument (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{l\-Name, }
+\item[{char}]{s\-Name, }
+\item[{bool $\ast$}]{value, }
+\item[{std\-::string}]{descr}
+\end{DoxyParamCaption}
+)}}\label{classFlagArgument_aef16024973942f8be515c430e0a90c66}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\-Name} & \-: Nom long de l'argument \\
+\hline
+{\em s\-Name} & \-: Nom court de l'argument \\
+\hline
+{\em value} & \-: Pointeur sur le booléen à modifier \\
+\hline
+{\em descr} & \-: Description de l'argument\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe \hyperlink{classBoolArgument}{Bool\-Argument}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFlagArgument_ab79ece26d0d7462dd491ba0c67bb95d2}{\index{Flag\-Argument@{Flag\-Argument}!display@{display}}
+\index{display@{display}!FlagArgument@{Flag\-Argument}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Flag\-Argument\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFlagArgument_ab79ece26d0d7462dd491ba0c67bb95d2}
+
+
+Afficheur. 
+
+C'est une méthode d'affichage d'un argument, l'affichage est sous la forme \-: Bool $<$nom$>$ = $<$valeur$>$ 
+
+Implements \hyperlink{classArgument_adab35148c697a617b0b0fcb3169611e3}{Argument}.
+
+\hypertarget{classFlagArgument_a78f4e074860e7a358097e0b3814aab3f}{\index{Flag\-Argument@{Flag\-Argument}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!FlagArgument@{Flag\-Argument}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Flag\-Argument\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classFlagArgument_a78f4e074860e7a358097e0b3814aab3f}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Valeur de l'argument
+\end{DoxyReturn}
+Accesseur de m\-\_\-value. \hypertarget{classFlagArgument_ab663d3b44ceb27bb2cee27b91f13363d}{\index{Flag\-Argument@{Flag\-Argument}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!FlagArgument@{Flag\-Argument}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Flag\-Argument\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classFlagArgument_ab663d3b44ceb27bb2cee27b91f13363d}
+
+
+Mutateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: Booléen qui donnera sa valeur à la variable m\-\_\-value.\\
+\hline
+\end{DoxyParams}
+Mutateur de m\-\_\-value. \hypertarget{classFlagArgument_a881f9de4811858463a4a981d3ebedb79}{\index{Flag\-Argument@{Flag\-Argument}!test\-Value@{test\-Value}}
+\index{test\-Value@{test\-Value}!FlagArgument@{Flag\-Argument}}
+\subsubsection[{test\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Flag\-Argument\-::test\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFlagArgument_a881f9de4811858463a4a981d3ebedb79}
+
+
+Mutateur et testeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: valeur d'un argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la valeur est du bon type, faux sinon.
+\end{DoxyReturn}
+C'est une méthode qui prend en paramètre la valeur d'un argument via la ligne de commande et qui test si elle correspond bien à un booléen. Si c'est le cas, la méthode met la valeur dans l'instance et retourne vrai, sinon faux. 
+
+Implements \hyperlink{classArgument_a20b6a0182f1402dd36b20b1a6743e665}{Argument}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{FlagArgument_8h}{Flag\-Argument.\-h}\item 
+src/\hyperlink{FlagArgument_8cpp}{Flag\-Argument.\-cpp}\end{DoxyCompactItemize}

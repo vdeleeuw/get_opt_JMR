@@ -1,0 +1,45 @@
+Warning: Tag `SYMBOL_CACHE_SIZE' at line 327 of file ./DoxyMake.mk has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `SHOW_DIRECTORIES' at line 547 of file ./DoxyMake.mk has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `HTML_ALIGN_MEMBERS' at line 941 of file ./DoxyMake.mk has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `USE_INLINE_TREES' at line 1132 of file ./DoxyMake.mk has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+/home/etudiant/Bureau/sol3/src/main.cpp:8: warning: the name `main.c' supplied as the second argument in the \file statement is not an input file
+/home/etudiant/Bureau/sol3/src/FlagArgument.h:81: warning: no matching class member found for 
+  FlagArgument::~BoolArgument()
+
+/home/etudiant/Bureau/sol3/src/Argument.cpp:4: warning: Member underline (macro definition) of file Argument.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/Argument.cpp:5: warning: Member end_underline (macro definition) of file Argument.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/Argument.cpp:6: warning: Member bold (macro definition) of file Argument.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/Argument.cpp:7: warning: Member end_bold (macro definition) of file Argument.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.cpp:10: warning: Member underline (macro definition) of file CommandLine.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.cpp:11: warning: Member end_underline (macro definition) of file CommandLine.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.cpp:12: warning: Member bold (macro definition) of file CommandLine.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.cpp:13: warning: Member end_bold (macro definition) of file CommandLine.cpp is not documented.
+/home/etudiant/Bureau/sol3/src/Argument.h:121: warning: Unsupported xml/html tag <type> found
+/home/etudiant/Bureau/sol3/src/Argument.h:121: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/Argument.h:121: warning: Unsupported xml/html tag <valeur> found
+/home/etudiant/Bureau/sol3/src/Argument.h:107: warning: argument 'string' of command @param is not found in the argument list of Argument::testValue(std::string val)=0
+/home/etudiant/Bureau/sol3/src/Argument.h:107: warning: The following parameters of Argument::testValue(std::string val)=0 are not documented:
+  parameter 'val'
+/home/etudiant/Bureau/sol3/src/BoolArgument.h:74: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/BoolArgument.h:74: warning: Unsupported xml/html tag <valeur> found
+/home/etudiant/Bureau/sol3/src/CommandLine.h:55: warning: Member setArgC(unsigned int val) (function) of class CommandLine is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.h:60: warning: Member setArgV(char **val) (function) of class CommandLine is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.h:65: warning: Member getVecArg() (function) of class CommandLine is not documented.
+/home/etudiant/Bureau/sol3/src/CommandLine.h:126: warning: argument 'ch' of command @param is not found in the argument list of CommandLine::ReturnAtLine(std::string s, unsigned int nb_tab)
+/home/etudiant/Bureau/sol3/src/CommandLine.h:126: warning: The following parameters of CommandLine::ReturnAtLine(std::string s, unsigned int nb_tab) are not documented:
+  parameter 's'
+  parameter 'nb_tab'
+/home/etudiant/Bureau/sol3/src/FlagArgument.h:74: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/FlagArgument.h:74: warning: Unsupported xml/html tag <valeur> found
+/home/etudiant/Bureau/sol3/src/FloatArgument.h:73: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/FloatArgument.h:73: warning: Unsupported xml/html tag <valeur> found
+/home/etudiant/Bureau/sol3/src/IntArgument.h:73: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/IntArgument.h:73: warning: Unsupported xml/html tag <valeur> found
+/home/etudiant/Bureau/sol3/src/UnsignedIntArgument.h:73: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/UnsignedIntArgument.h:73: warning: Unsupported xml/html tag <valeur> found
+/home/etudiant/Bureau/sol3/src/VecArgument.h:78: warning: Unsupported xml/html tag <nom> found
+/home/etudiant/Bureau/sol3/src/VecArgument.h:78: warning: Unsupported xml/html tag <valeur> found

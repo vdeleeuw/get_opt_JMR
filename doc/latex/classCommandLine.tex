@@ -1,0 +1,176 @@
+\hypertarget{classCommandLine}{\section{Command\-Line Class Reference}
+\label{classCommandLine}\index{Command\-Line@{Command\-Line}}
+}
+
+
+{\ttfamily \#include $<$Command\-Line.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCommandLine_ae6329212e2108a9e2a1795f27fab33eb}{Command\-Line} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{classCommandLine_ab996878223010dc05cac5e21606e0671}{Command\-Line} (unsigned int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classCommandLine_a8d677ccd88e53ba3e1c01936a39d231d}{void {\bfseries set\-Arg\-C} (unsigned int val)}\label{classCommandLine_a8d677ccd88e53ba3e1c01936a39d231d}
+
+\item 
+\hypertarget{classCommandLine_a3e5dc0a46e7faa50564b3df18f6456bb}{void {\bfseries set\-Arg\-V} (char $\ast$$\ast$val)}\label{classCommandLine_a3e5dc0a46e7faa50564b3df18f6456bb}
+
+\item 
+\hypertarget{classCommandLine_a392affafb13a71b1ec6c731e37f65954}{std\-::vector$<$ \hyperlink{classArgument}{Argument} $\ast$ $>$ {\bfseries get\-Vec\-Arg} ()}\label{classCommandLine_a392affafb13a71b1ec6c731e37f65954}
+
+\item 
+void \hyperlink{classCommandLine_a3cd1954c5c82980a3f57288d09192937}{add} (\hyperlink{classArgument}{Argument} $\ast$a)
+\item 
+\hyperlink{classArgument}{Argument} $\ast$ \hyperlink{classCommandLine_a884050a7939bd56a166001f162fbfc7b}{find} (char $\ast$name)
+\item 
+bool \hyperlink{classCommandLine_a62cd80cf6f4f99867034ce43c2c1b94f}{parse} ()
+\item 
+\hypertarget{classCommandLine_a611e230a49e8fccc31410aad81c88991}{void \hyperlink{classCommandLine_a611e230a49e8fccc31410aad81c88991}{display} ()}\label{classCommandLine_a611e230a49e8fccc31410aad81c88991}
+
+\begin{DoxyCompactList}\small\item\em Afficheur
+
+C'est une méthode d'affichage, elle parcours le vecteur d'arguments en entier pour afficher chaques éléments de celui-\/ci, s'ils sont présent dans la ligne de commande. \end{DoxyCompactList}\item 
+\hypertarget{classCommandLine_a5c75f2e2c604253a476134e0427ede57}{void \hyperlink{classCommandLine_a5c75f2e2c604253a476134e0427ede57}{display\-All} ()}\label{classCommandLine_a5c75f2e2c604253a476134e0427ede57}
+
+\begin{DoxyCompactList}\small\item\em Afficheur
+
+C'est une méthode d'affichage, elle parcours le vecteur d'arguments en entier pour afficher chaques éléments de celui-\/ci. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classCommandLine_a9611a3048e9ce31c91c23a18c6143c60}{get\-Choix\-Arg} (\hyperlink{classArgument}{Argument} $\ast$arg)
+\item 
+void \hyperlink{classCommandLine_abcbfd8d82d87a58776ce92c1f36f8432}{Return\-At\-Line} (std\-::string s, unsigned int nb\-\_\-tab)
+\item 
+void \hyperlink{classCommandLine_af1ccfe2c88a4eb39136f94d96592525a}{print\-\_\-synopsis} (std\-::string commande, std\-::string description)
+\item 
+\hyperlink{classCommandLine_ac359efccafe57f845b1f747a9db3c6d9}{$\sim$\-Command\-Line} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Les objets de la classe \hyperlink{classCommandLine}{Command\-Line} stocke les informations d'une ligne de commande comme le nombre d'arguments dans la ligne (m\-\_\-argc) et les arguments eux-\/même dans un tableau (m\-\_\-argv), ainsi qu'un vecteur d'argument (m\-\_\-vec\-Arg). La classe possède un constructeur, un destructeur et des méthodes de gestions d'arguments qui permettent \-: d'ajouter un argument dans le vecteur d'argument (add(\-Argument)), de trouver si un argument est court ou long et si il est présent dans le vecteur (\hyperlink{classCommandLine_a884050a7939bd56a166001f162fbfc7b}{find(char$\ast$)}), de tester si un argument est une option courte ou longue et si elle est suivie d'une valeur (\hyperlink{classCommandLine_a62cd80cf6f4f99867034ce43c2c1b94f}{parse()}), et une méthode d'affichage des éléments du vecteurs (\hyperlink{classCommandLine_a611e230a49e8fccc31410aad81c88991}{display()}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCommandLine_ae6329212e2108a9e2a1795f27fab33eb}{\index{Command\-Line@{Command\-Line}!Command\-Line@{Command\-Line}}
+\index{Command\-Line@{Command\-Line}!CommandLine@{Command\-Line}}
+\subsubsection[{Command\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Command\-Line\-::\-Command\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_ae6329212e2108a9e2a1795f27fab33eb}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{classCommandLine}{Command\-Line} \hypertarget{classCommandLine_ab996878223010dc05cac5e21606e0671}{\index{Command\-Line@{Command\-Line}!Command\-Line@{Command\-Line}}
+\index{Command\-Line@{Command\-Line}!CommandLine@{Command\-Line}}
+\subsubsection[{Command\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Command\-Line\-::\-Command\-Line (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_ab996878223010dc05cac5e21606e0671}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \-: nombre d'argument de la ligne de commande \\
+\hline
+{\em argv} & \-: tableau des arguments de la ligne de commande\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe \hyperlink{classCommandLine}{Command\-Line} \hypertarget{classCommandLine_ac359efccafe57f845b1f747a9db3c6d9}{\index{Command\-Line@{Command\-Line}!$\sim$\-Command\-Line@{$\sim$\-Command\-Line}}
+\index{$\sim$\-Command\-Line@{$\sim$\-Command\-Line}!CommandLine@{Command\-Line}}
+\subsubsection[{$\sim$\-Command\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Command\-Line\-::$\sim$\-Command\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_ac359efccafe57f845b1f747a9db3c6d9}
+
+
+Destructeur. 
+
+Destructeur de la classe \hyperlink{classCommandLine}{Command\-Line}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCommandLine_a3cd1954c5c82980a3f57288d09192937}{\index{Command\-Line@{Command\-Line}!add@{add}}
+\index{add@{add}!CommandLine@{Command\-Line}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Command\-Line\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Argument} $\ast$}]{a}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_a3cd1954c5c82980a3f57288d09192937}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$a} & \-: pointeur sur un argument.\\
+\hline
+\end{DoxyParams}
+C'est une méthode qui permet d'ajouter un argument au vecteur d'arguments (m\-\_\-vec\-Arg). \hypertarget{classCommandLine_a884050a7939bd56a166001f162fbfc7b}{\index{Command\-Line@{Command\-Line}!find@{find}}
+\index{find@{find}!CommandLine@{Command\-Line}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument} $\ast$ Command\-Line\-::find (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_a884050a7939bd56a166001f162fbfc7b}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \-: nom d'un argument en chaine de caractère \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur argument si la méthode à trouvé cet argument, N\-U\-L\-L sinon.
+\end{DoxyReturn}
+C'est une méthode qui prend le nom d'un argument en paramètre et qui recherche sa présence dans le vecteur d'arguments (m\-\_\-vec\-Arg) et qui retourne un pointeur sur cet argument si la méthode l'a trouvé, sinon elle retourne la valeur N\-U\-L\-L. \hypertarget{classCommandLine_a9611a3048e9ce31c91c23a18c6143c60}{\index{Command\-Line@{Command\-Line}!get\-Choix\-Arg@{get\-Choix\-Arg}}
+\index{get\-Choix\-Arg@{get\-Choix\-Arg}!CommandLine@{Command\-Line}}
+\subsubsection[{get\-Choix\-Arg}]{\setlength{\rightskip}{0pt plus 5cm}string Command\-Line\-::get\-Choix\-Arg (
+\begin{DoxyParamCaption}
+\item[{{\bf Argument} $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_a9611a3048e9ce31c91c23a18c6143c60}
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & \-: l'argument sur lequel on test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Les choix correspondant à la référence d'un argument en chaîne de caractère.
+\end{DoxyReturn}
+C'est une méthode qui prend une référence à un argument en paramètre et qui test si le type de la classe correspond à un type existant tel que bool, int, float, unsigned int ou vector, et qui retourne les types possibles en chaîne de caractère. \hypertarget{classCommandLine_a62cd80cf6f4f99867034ce43c2c1b94f}{\index{Command\-Line@{Command\-Line}!parse@{parse}}
+\index{parse@{parse}!CommandLine@{Command\-Line}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool Command\-Line\-::parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_a62cd80cf6f4f99867034ce43c2c1b94f}
+\begin{DoxyReturn}{Returns}
+Vrai si l'argument est suivie d'une valeur du bon type, faux sinon.
+\end{DoxyReturn}
+C'est une méthode qui teste si un argument est une option courte ou longue et si la valeur suivant l'argument est d'un type correcte. Donc elle retourne vrai si tout c'est bien passé, ou faux si une erreur survient lors d'une opération. \hypertarget{classCommandLine_af1ccfe2c88a4eb39136f94d96592525a}{\index{Command\-Line@{Command\-Line}!print\-\_\-synopsis@{print\-\_\-synopsis}}
+\index{print\-\_\-synopsis@{print\-\_\-synopsis}!CommandLine@{Command\-Line}}
+\subsubsection[{print\-\_\-synopsis}]{\setlength{\rightskip}{0pt plus 5cm}void Command\-Line\-::print\-\_\-synopsis (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{commande, }
+\item[{std\-::string}]{description}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_af1ccfe2c88a4eb39136f94d96592525a}
+C'est une méthode qui prend en paramètre le nom du programme et sa description et qui affiche toute les possibilités d'éxécution possibles, ainsi qu'une description pour chaques arguments possibles. \hypertarget{classCommandLine_abcbfd8d82d87a58776ce92c1f36f8432}{\index{Command\-Line@{Command\-Line}!Return\-At\-Line@{Return\-At\-Line}}
+\index{Return\-At\-Line@{Return\-At\-Line}!CommandLine@{Command\-Line}}
+\subsubsection[{Return\-At\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Command\-Line\-::\-Return\-At\-Line (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s, }
+\item[{unsigned int}]{nb\-\_\-tab}
+\end{DoxyParamCaption}
+)}}\label{classCommandLine_abcbfd8d82d87a58776ce92c1f36f8432}
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & \-: La chaine de caractère contenant le nom du programme et sa description, nb\-\_\-tab \-: le nombre de tabulation.\\
+\hline
+\end{DoxyParams}
+C'est une méthode qui prend une chaîne de caractère contenant le nom du programme et sa description en paramètre et qui permet de les mettre en page, c'est à dire qu'il insère les tabulations en début de ligne et qu'il retourne à la ligne quand la chaîne de caractère $\ast$ dépasse les 60 caractères par ligne (avec découpage au mot). 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{CommandLine_8h}{Command\-Line.\-h}\item 
+src/\hyperlink{CommandLine_8cpp}{Command\-Line.\-cpp}\end{DoxyCompactItemize}

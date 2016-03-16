@@ -1,0 +1,147 @@
+\hypertarget{classFloatArgument}{\section{Float\-Argument Class Reference}
+\label{classFloatArgument}\index{Float\-Argument@{Float\-Argument}}
+}
+
+
+{\ttfamily \#include $<$Float\-Argument.\-h$>$}
+
+Inheritance diagram for Float\-Argument\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFloatArgument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFloatArgument_a8d62a9520880a965646eccb244c0befb}{Float\-Argument} (std\-::string l\-Name, char s\-Name, float $\ast$value, std\-::string descr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+float \hyperlink{classFloatArgument_a304c4a066b705321c11c522cdbf27818}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+void \hyperlink{classFloatArgument_a3a975e03f230f16346507b90fa598ef0}{set\-Value} (float val)
+\begin{DoxyCompactList}\small\item\em Mutateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classFloatArgument_a6456a6760c3030a7c67c688e8cde03be}{test\-Value} (std\-::string val)
+\begin{DoxyCompactList}\small\item\em Mutateur et testeur. \end{DoxyCompactList}\item 
+void \hyperlink{classFloatArgument_a25a6f413c78728ffb92b146dce699669}{display} ()
+\begin{DoxyCompactList}\small\item\em Afficheur. \end{DoxyCompactList}\item 
+\hyperlink{classFloatArgument_a6c5c8db366c42123d2b021a1cc540717}{$\sim$\-Float\-Argument} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{classFloatArgument}{Float\-Argument} hérite de la classe \hyperlink{classArgument}{Argument}. Les objets de cette classe stockent les informations d'un argument de type float, elle posséde une variable qui contient sa valeur (m\-\_\-value). Elle dispose d'un constructeur et des méthodes qui permettent de tester et de définir la valeur d'une instance (\hyperlink{classFloatArgument_a6456a6760c3030a7c67c688e8cde03be}{test\-Value()}), d'afficher les informations liées à une instance (\hyperlink{classFloatArgument_a25a6f413c78728ffb92b146dce699669}{display()}), d'un accesseur (\hyperlink{classFloatArgument_a304c4a066b705321c11c522cdbf27818}{get\-Value()}) et d'un mutateur (\hyperlink{classFloatArgument_a3a975e03f230f16346507b90fa598ef0}{set\-Value(float)}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFloatArgument_a8d62a9520880a965646eccb244c0befb}{\index{Float\-Argument@{Float\-Argument}!Float\-Argument@{Float\-Argument}}
+\index{Float\-Argument@{Float\-Argument}!FloatArgument@{Float\-Argument}}
+\subsubsection[{Float\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Float\-Argument\-::\-Float\-Argument (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{l\-Name, }
+\item[{char}]{s\-Name, }
+\item[{float $\ast$}]{value, }
+\item[{std\-::string}]{descr}
+\end{DoxyParamCaption}
+)}}\label{classFloatArgument_a8d62a9520880a965646eccb244c0befb}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\-Name} & \-: Nom long de l'argument \\
+\hline
+{\em s\-Name} & \-: Nom court de l'argument \\
+\hline
+{\em value} & \-: Pointeur sur le float à modifier \\
+\hline
+{\em descr} & \-: Description de l'argument\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe \hyperlink{classFloatArgument}{Float\-Argument}. \hypertarget{classFloatArgument_a6c5c8db366c42123d2b021a1cc540717}{\index{Float\-Argument@{Float\-Argument}!$\sim$\-Float\-Argument@{$\sim$\-Float\-Argument}}
+\index{$\sim$\-Float\-Argument@{$\sim$\-Float\-Argument}!FloatArgument@{Float\-Argument}}
+\subsubsection[{$\sim$\-Float\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Float\-Argument\-::$\sim$\-Float\-Argument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classFloatArgument_a6c5c8db366c42123d2b021a1cc540717}
+
+
+Destructeur. 
+
+Destructeur de la classe \hyperlink{classFloatArgument}{Float\-Argument} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFloatArgument_a25a6f413c78728ffb92b146dce699669}{\index{Float\-Argument@{Float\-Argument}!display@{display}}
+\index{display@{display}!FloatArgument@{Float\-Argument}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Float\-Argument\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFloatArgument_a25a6f413c78728ffb92b146dce699669}
+
+
+Afficheur. 
+
+C'est une méthode d'affichage d'un argument, l'affichage est sous la forme \-: Float $<$nom$>$ = $<$valeur$>$ 
+
+Implements \hyperlink{classArgument_adab35148c697a617b0b0fcb3169611e3}{Argument}.
+
+\hypertarget{classFloatArgument_a304c4a066b705321c11c522cdbf27818}{\index{Float\-Argument@{Float\-Argument}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!FloatArgument@{Float\-Argument}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Float\-Argument\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classFloatArgument_a304c4a066b705321c11c522cdbf27818}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Valeur de l'argument
+\end{DoxyReturn}
+Accesseur de m\-\_\-value. \hypertarget{classFloatArgument_a3a975e03f230f16346507b90fa598ef0}{\index{Float\-Argument@{Float\-Argument}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!FloatArgument@{Float\-Argument}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Float\-Argument\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classFloatArgument_a3a975e03f230f16346507b90fa598ef0}
+
+
+Mutateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: Float qui donnera sa valeur à la variable m\-\_\-value.\\
+\hline
+\end{DoxyParams}
+Mutateur de m\-\_\-value. \hypertarget{classFloatArgument_a6456a6760c3030a7c67c688e8cde03be}{\index{Float\-Argument@{Float\-Argument}!test\-Value@{test\-Value}}
+\index{test\-Value@{test\-Value}!FloatArgument@{Float\-Argument}}
+\subsubsection[{test\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Float\-Argument\-::test\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFloatArgument_a6456a6760c3030a7c67c688e8cde03be}
+
+
+Mutateur et testeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: valeur d'un argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la valeur est du bon type, faux sinon. C'est une méthode qui prend en paramètre la valeur d'un argument via la ligne de commande et qui test si elle correspond bien à un float. Si c'est le cas, la méthode met la valeur dans l'instance et retourne vrai, sinon faux. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classArgument_a20b6a0182f1402dd36b20b1a6743e665}{Argument}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{FloatArgument_8h}{Float\-Argument.\-h}\item 
+src/\hyperlink{FloatArgument_8cpp}{Float\-Argument.\-cpp}\end{DoxyCompactItemize}

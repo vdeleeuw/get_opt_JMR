@@ -1,0 +1,147 @@
+\hypertarget{classIntArgument}{\section{Int\-Argument Class Reference}
+\label{classIntArgument}\index{Int\-Argument@{Int\-Argument}}
+}
+
+
+{\ttfamily \#include $<$Int\-Argument.\-h$>$}
+
+Inheritance diagram for Int\-Argument\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIntArgument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIntArgument_a1ff15a0652a7ed6ef37d8438cac02260}{Int\-Argument} (std\-::string l\-Name, char s\-Name, int $\ast$value, std\-::string descr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+int \hyperlink{classIntArgument_af58d4470cb44ed7f383c2cba9ba033e5}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+void \hyperlink{classIntArgument_ab3a07e2d49a5fba9e79fb0d7585f6a85}{set\-Value} (int val)
+\begin{DoxyCompactList}\small\item\em Mutateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classIntArgument_a3d27054173466542694fd971b13be8bb}{test\-Value} (std\-::string val)
+\begin{DoxyCompactList}\small\item\em Mutateur et testeur. \end{DoxyCompactList}\item 
+void \hyperlink{classIntArgument_a8bb885657c1f58c1fbacfc513571ea30}{display} ()
+\begin{DoxyCompactList}\small\item\em Afficheur. \end{DoxyCompactList}\item 
+\hyperlink{classIntArgument_a700cda557bc17999ef952250f2ba39c6}{$\sim$\-Int\-Argument} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{classIntArgument}{Int\-Argument} hérite de la classe \hyperlink{classArgument}{Argument}. Les objets de cette classe stockent les informations d'un arguments de type entier, elle posséde une variable qui contient sa valeur (m\-\_\-value). Elle dispose d'un constructeur et des méthodes qui permettent de définir et de tester la valeur d'une instance (\hyperlink{classIntArgument_a3d27054173466542694fd971b13be8bb}{test\-Value()}), d'afficher les informations liées à une instance (\hyperlink{classIntArgument_a8bb885657c1f58c1fbacfc513571ea30}{display()}), d'un accesseur (\hyperlink{classIntArgument_af58d4470cb44ed7f383c2cba9ba033e5}{get\-Value()}) et d'un mutateur (\hyperlink{classIntArgument_ab3a07e2d49a5fba9e79fb0d7585f6a85}{set\-Value(int)}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIntArgument_a1ff15a0652a7ed6ef37d8438cac02260}{\index{Int\-Argument@{Int\-Argument}!Int\-Argument@{Int\-Argument}}
+\index{Int\-Argument@{Int\-Argument}!IntArgument@{Int\-Argument}}
+\subsubsection[{Int\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Argument\-::\-Int\-Argument (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{l\-Name, }
+\item[{char}]{s\-Name, }
+\item[{int $\ast$}]{value, }
+\item[{std\-::string}]{descr}
+\end{DoxyParamCaption}
+)}}\label{classIntArgument_a1ff15a0652a7ed6ef37d8438cac02260}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\-Name} & \-: Nom long de l'argument \\
+\hline
+{\em s\-Name} & \-: Nom court de l'argument \\
+\hline
+{\em value} & \-: Pointeur sur l'entier à modifier \\
+\hline
+{\em descr} & \-: Description de l'argument\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe \hyperlink{classIntArgument}{Int\-Argument}. \hypertarget{classIntArgument_a700cda557bc17999ef952250f2ba39c6}{\index{Int\-Argument@{Int\-Argument}!$\sim$\-Int\-Argument@{$\sim$\-Int\-Argument}}
+\index{$\sim$\-Int\-Argument@{$\sim$\-Int\-Argument}!IntArgument@{Int\-Argument}}
+\subsubsection[{$\sim$\-Int\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Argument\-::$\sim$\-Int\-Argument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classIntArgument_a700cda557bc17999ef952250f2ba39c6}
+
+
+Destructeur. 
+
+Destructeur de la classe \hyperlink{classIntArgument}{Int\-Argument} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classIntArgument_a8bb885657c1f58c1fbacfc513571ea30}{\index{Int\-Argument@{Int\-Argument}!display@{display}}
+\index{display@{display}!IntArgument@{Int\-Argument}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Int\-Argument\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classIntArgument_a8bb885657c1f58c1fbacfc513571ea30}
+
+
+Afficheur. 
+
+C'est une méthode d'affichage d'un argument, l'affichage est sous la forme \-: Int $<$nom$>$ = $<$valeur$>$ 
+
+Implements \hyperlink{classArgument_adab35148c697a617b0b0fcb3169611e3}{Argument}.
+
+\hypertarget{classIntArgument_af58d4470cb44ed7f383c2cba9ba033e5}{\index{Int\-Argument@{Int\-Argument}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!IntArgument@{Int\-Argument}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int Int\-Argument\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classIntArgument_af58d4470cb44ed7f383c2cba9ba033e5}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Valeur de l'\hyperlink{classArgument}{Argument}
+\end{DoxyReturn}
+Accesseur de m\-\_\-value. \hypertarget{classIntArgument_ab3a07e2d49a5fba9e79fb0d7585f6a85}{\index{Int\-Argument@{Int\-Argument}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!IntArgument@{Int\-Argument}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Int\-Argument\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classIntArgument_ab3a07e2d49a5fba9e79fb0d7585f6a85}
+
+
+Mutateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: Entier qui donnera sa valeur à la variable m\-\_\-value.\\
+\hline
+\end{DoxyParams}
+Mutateur de m\-\_\-value. \hypertarget{classIntArgument_a3d27054173466542694fd971b13be8bb}{\index{Int\-Argument@{Int\-Argument}!test\-Value@{test\-Value}}
+\index{test\-Value@{test\-Value}!IntArgument@{Int\-Argument}}
+\subsubsection[{test\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Int\-Argument\-::test\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classIntArgument_a3d27054173466542694fd971b13be8bb}
+
+
+Mutateur et testeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: valeur de l'argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la valeur est du bon type, faux sinon. C'est une méthode qui prend en paramètre la valeur d'un argument via la ligne de commande et qui test si elle correspond bien à un entier. Si c'est le cas, la méthode met la valeur dans l'instance et retourne vrai, sinon faux. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classArgument_a20b6a0182f1402dd36b20b1a6743e665}{Argument}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{IntArgument_8h}{Int\-Argument.\-h}\item 
+src/\hyperlink{IntArgument_8cpp}{Int\-Argument.\-cpp}\end{DoxyCompactItemize}

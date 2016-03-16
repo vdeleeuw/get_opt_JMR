@@ -1,0 +1,166 @@
+\hypertarget{classVecArgument}{\section{Vec\-Argument Class Reference}
+\label{classVecArgument}\index{Vec\-Argument@{Vec\-Argument}}
+}
+
+
+{\ttfamily \#include $<$Vec\-Argument.\-h$>$}
+
+Inheritance diagram for Vec\-Argument\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVecArgument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVecArgument_aec430730db7a84e0529c4385b60406d7}{Vec\-Argument} (std\-::string l\-Name, char s\-Name, std\-::string $\ast$value, std\-::vector$<$ std\-::string $>$ vec, std\-::string descr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classVecArgument_a45634f1256decb5aed723b9da11db7ad}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+void \hyperlink{classVecArgument_ab83b7cf9a619de8086743017debee409}{set\-Value} (std\-::string val)
+\begin{DoxyCompactList}\small\item\em Mutateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classVecArgument_a2b3cbbc68d03d2eec8dd00452d228ef1}{test\-Value} (std\-::string val)
+\begin{DoxyCompactList}\small\item\em Mutateur et testeurstring$>$ Vec\-Argument\-::get. \end{DoxyCompactList}\item 
+void \hyperlink{classVecArgument_ae3611e8947ccbd26681044f20df4b351}{display} ()
+\begin{DoxyCompactList}\small\item\em Afficheur. \end{DoxyCompactList}\item 
+\hyperlink{classVecArgument_ae4dbf015d767e2501434c63577f4a30b}{$\sim$\-Vec\-Argument} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{classVecArgument_ac9d4c2a47cb82df6a2d3791349c9aa56}{get\-Vect} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{classVecArgument}{Vec\-Argument} hérite de la classe \hyperlink{classArgument}{Argument}. Les objets de cette classe stockent les informations d'un arguments de type vecteur, elle possède une variable qui contient sa valeur (m\-\_\-value) et une autre qui contient le vecteur de choix (m\-\_\-vec\-Str). Elle dispose d'un constructeur et des méthodes qui permettent de définir et de tester la valeur d'une instance (\hyperlink{classVecArgument_a2b3cbbc68d03d2eec8dd00452d228ef1}{test\-Value()}), d'afficher les informations liées à une instance (\hyperlink{classVecArgument_ae3611e8947ccbd26681044f20df4b351}{display()}), d'un accesseur (\hyperlink{classVecArgument_a45634f1256decb5aed723b9da11db7ad}{get\-Value()}) et d'un mutateur (\hyperlink{classVecArgument_ab83b7cf9a619de8086743017debee409}{set\-Value(std\-::string)}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVecArgument_aec430730db7a84e0529c4385b60406d7}{\index{Vec\-Argument@{Vec\-Argument}!Vec\-Argument@{Vec\-Argument}}
+\index{Vec\-Argument@{Vec\-Argument}!VecArgument@{Vec\-Argument}}
+\subsubsection[{Vec\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Vec\-Argument\-::\-Vec\-Argument (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{l\-Name, }
+\item[{char}]{s\-Name, }
+\item[{std\-::string $\ast$}]{value, }
+\item[{std\-::vector$<$ std\-::string $>$}]{vec, }
+\item[{std\-::string}]{descr}
+\end{DoxyParamCaption}
+)}}\label{classVecArgument_aec430730db7a84e0529c4385b60406d7}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\-Name} & \-: Nom long de l'argument \\
+\hline
+{\em s\-Name} & \-: Nom court de l'argument \\
+\hline
+{\em value} & \-: Pointeur sur la chaîne de caractères à modifier \\
+\hline
+{\em vec} & \-: Vecteur de chaîne de caractères des choix possibles \\
+\hline
+{\em descr} & \-: Description de l'argument\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe \hyperlink{classVecArgument}{Vec\-Argument}. \hypertarget{classVecArgument_ae4dbf015d767e2501434c63577f4a30b}{\index{Vec\-Argument@{Vec\-Argument}!$\sim$\-Vec\-Argument@{$\sim$\-Vec\-Argument}}
+\index{$\sim$\-Vec\-Argument@{$\sim$\-Vec\-Argument}!VecArgument@{Vec\-Argument}}
+\subsubsection[{$\sim$\-Vec\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Vec\-Argument\-::$\sim$\-Vec\-Argument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVecArgument_ae4dbf015d767e2501434c63577f4a30b}
+
+
+Destructeur. 
+
+Destructeur de la classe \hyperlink{classVecArgument}{Vec\-Argument} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classVecArgument_ae3611e8947ccbd26681044f20df4b351}{\index{Vec\-Argument@{Vec\-Argument}!display@{display}}
+\index{display@{display}!VecArgument@{Vec\-Argument}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Vec\-Argument\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classVecArgument_ae3611e8947ccbd26681044f20df4b351}
+
+
+Afficheur. 
+
+C'est une méthode d'affichage d'un argument, l'affichage est sous la forme \-: Tab $<$nom$>$ = $<$valeur$>$ 
+
+Implements \hyperlink{classArgument_adab35148c697a617b0b0fcb3169611e3}{Argument}.
+
+\hypertarget{classVecArgument_a45634f1256decb5aed723b9da11db7ad}{\index{Vec\-Argument@{Vec\-Argument}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!VecArgument@{Vec\-Argument}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec\-Argument\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVecArgument_a45634f1256decb5aed723b9da11db7ad}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Valeur de l'argument
+\end{DoxyReturn}
+Accesseur de m\-\_\-value. \hypertarget{classVecArgument_ac9d4c2a47cb82df6a2d3791349c9aa56}{\index{Vec\-Argument@{Vec\-Argument}!get\-Vect@{get\-Vect}}
+\index{get\-Vect@{get\-Vect}!VecArgument@{Vec\-Argument}}
+\subsubsection[{get\-Vect}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Vec\-Argument\-::get\-Vect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classVecArgument_ac9d4c2a47cb82df6a2d3791349c9aa56}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Le vecteur de valeur en chaîne de caractère
+\end{DoxyReturn}
+Accesseur de m\-\_\-vec\-Str \hypertarget{classVecArgument_ab83b7cf9a619de8086743017debee409}{\index{Vec\-Argument@{Vec\-Argument}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!VecArgument@{Vec\-Argument}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Vec\-Argument\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVecArgument_ab83b7cf9a619de8086743017debee409}
+
+
+Mutateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: Chaîne de caractère qui donnera sa valeur à la variable m\-\_\-value.\\
+\hline
+\end{DoxyParams}
+Mutateur de m\-\_\-value. \hypertarget{classVecArgument_a2b3cbbc68d03d2eec8dd00452d228ef1}{\index{Vec\-Argument@{Vec\-Argument}!test\-Value@{test\-Value}}
+\index{test\-Value@{test\-Value}!VecArgument@{Vec\-Argument}}
+\subsubsection[{test\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec\-Argument\-::test\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classVecArgument_a2b3cbbc68d03d2eec8dd00452d228ef1}
+
+
+Mutateur et testeurstring$>$ Vec\-Argument\-::get. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: valeur d'un argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la valeur est du bon type, faux sinon.
+\end{DoxyReturn}
+C'est une méthode qui prend en paramètre la valeur d'un argument via la ligne de commande et qui test si elle est bien incluse dans le vecteur de l'instance. Si c'est le cas, la méthode met la valeur dans l'instance et retourne vrai, sinon faux. 
+
+Implements \hyperlink{classArgument_a20b6a0182f1402dd36b20b1a6743e665}{Argument}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{VecArgument_8h}{Vec\-Argument.\-h}\item 
+src/\hyperlink{VecArgument_8cpp}{Vec\-Argument.\-cpp}\end{DoxyCompactItemize}

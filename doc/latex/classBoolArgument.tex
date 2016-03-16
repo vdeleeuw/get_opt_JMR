@@ -1,0 +1,147 @@
+\hypertarget{classBoolArgument}{\section{Bool\-Argument Class Reference}
+\label{classBoolArgument}\index{Bool\-Argument@{Bool\-Argument}}
+}
+
+
+{\ttfamily \#include $<$Bool\-Argument.\-h$>$}
+
+Inheritance diagram for Bool\-Argument\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBoolArgument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBoolArgument_aac57d1e4e57f45c6786509ff36f8d274}{Bool\-Argument} (std\-::string l\-Name, char s\-Name, bool $\ast$value, std\-::string descr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{classBoolArgument_af51f23cede522a86230b190877d16170}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+void \hyperlink{classBoolArgument_a7b7c18ef5aee456259062262695dcaa5}{set\-Value} (bool val)
+\begin{DoxyCompactList}\small\item\em Mutateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classBoolArgument_ad4c0bd190cf554294e07d4ad3194308e}{test\-Value} (std\-::string val)
+\begin{DoxyCompactList}\small\item\em Mutateur et testeur. \end{DoxyCompactList}\item 
+void \hyperlink{classBoolArgument_a458a678ce4c52055f2c09132b49a0aca}{display} ()
+\begin{DoxyCompactList}\small\item\em Afficheur. \end{DoxyCompactList}\item 
+\hyperlink{classBoolArgument_a195c1bab8f3e69db0d6170caebced29d}{$\sim$\-Bool\-Argument} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{classBoolArgument}{Bool\-Argument} hérite de la classe \hyperlink{classArgument}{Argument}. Les objets de cette classe stockent les informations d'un arguments de type booléen, elle posséde une variable qui contient sa valeur (m\-\_\-value). Elle dispose d'un constructeur et des méthodes qui permettent de définir et de tester la valeur d'une instance (\hyperlink{classBoolArgument_ad4c0bd190cf554294e07d4ad3194308e}{test\-Value()}), d'afficher les informations liées à une instance (\hyperlink{classBoolArgument_a458a678ce4c52055f2c09132b49a0aca}{display()}), d'un accesseur (\hyperlink{classBoolArgument_af51f23cede522a86230b190877d16170}{get\-Value()}) et d'un mutateur (\hyperlink{classBoolArgument_a7b7c18ef5aee456259062262695dcaa5}{set\-Value(bool)}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBoolArgument_aac57d1e4e57f45c6786509ff36f8d274}{\index{Bool\-Argument@{Bool\-Argument}!Bool\-Argument@{Bool\-Argument}}
+\index{Bool\-Argument@{Bool\-Argument}!BoolArgument@{Bool\-Argument}}
+\subsubsection[{Bool\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Bool\-Argument\-::\-Bool\-Argument (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{l\-Name, }
+\item[{char}]{s\-Name, }
+\item[{bool $\ast$}]{value, }
+\item[{std\-::string}]{descr}
+\end{DoxyParamCaption}
+)}}\label{classBoolArgument_aac57d1e4e57f45c6786509ff36f8d274}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\-Name} & \-: Nom long de l'argument \\
+\hline
+{\em s\-Name} & \-: Nom court de l'argument \\
+\hline
+{\em value} & \-: Pointeur sur le booléen à modifier \\
+\hline
+{\em descr} & \-: Description de l'argument\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe \hyperlink{classBoolArgument}{Bool\-Argument}. \hypertarget{classBoolArgument_a195c1bab8f3e69db0d6170caebced29d}{\index{Bool\-Argument@{Bool\-Argument}!$\sim$\-Bool\-Argument@{$\sim$\-Bool\-Argument}}
+\index{$\sim$\-Bool\-Argument@{$\sim$\-Bool\-Argument}!BoolArgument@{Bool\-Argument}}
+\subsubsection[{$\sim$\-Bool\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}Bool\-Argument\-::$\sim$\-Bool\-Argument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBoolArgument_a195c1bab8f3e69db0d6170caebced29d}
+
+
+Destructeur. 
+
+Destructeur de la classe \hyperlink{classBoolArgument}{Bool\-Argument} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBoolArgument_a458a678ce4c52055f2c09132b49a0aca}{\index{Bool\-Argument@{Bool\-Argument}!display@{display}}
+\index{display@{display}!BoolArgument@{Bool\-Argument}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Bool\-Argument\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBoolArgument_a458a678ce4c52055f2c09132b49a0aca}
+
+
+Afficheur. 
+
+C'est une méthode d'affichage d'un argument, l'affichage est sous la forme \-: Bool $<$nom$>$ = $<$valeur$>$ 
+
+Implements \hyperlink{classArgument_adab35148c697a617b0b0fcb3169611e3}{Argument}.
+
+\hypertarget{classBoolArgument_af51f23cede522a86230b190877d16170}{\index{Bool\-Argument@{Bool\-Argument}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!BoolArgument@{Bool\-Argument}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Bool\-Argument\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBoolArgument_af51f23cede522a86230b190877d16170}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Valeur de l'argument
+\end{DoxyReturn}
+Accesseur de m\-\_\-value. \hypertarget{classBoolArgument_a7b7c18ef5aee456259062262695dcaa5}{\index{Bool\-Argument@{Bool\-Argument}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!BoolArgument@{Bool\-Argument}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Bool\-Argument\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBoolArgument_a7b7c18ef5aee456259062262695dcaa5}
+
+
+Mutateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: Booléen qui donnera sa valeur à la variable m\-\_\-value.\\
+\hline
+\end{DoxyParams}
+Mutateur de m\-\_\-value. \hypertarget{classBoolArgument_ad4c0bd190cf554294e07d4ad3194308e}{\index{Bool\-Argument@{Bool\-Argument}!test\-Value@{test\-Value}}
+\index{test\-Value@{test\-Value}!BoolArgument@{Bool\-Argument}}
+\subsubsection[{test\-Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Bool\-Argument\-::test\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBoolArgument_ad4c0bd190cf554294e07d4ad3194308e}
+
+
+Mutateur et testeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: valeur d'un argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la valeur est du bon type, faux sinon.
+\end{DoxyReturn}
+C'est une méthode qui prend en paramètre la valeur d'un argument via la ligne de commande et qui test si elle correspond bien à un booléen. Si c'est le cas, la méthode met la valeur dans l'instance et retourne vrai, sinon faux. 
+
+Implements \hyperlink{classArgument_a20b6a0182f1402dd36b20b1a6743e665}{Argument}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{BoolArgument_8h}{Bool\-Argument.\-h}\item 
+src/\hyperlink{BoolArgument_8cpp}{Bool\-Argument.\-cpp}\end{DoxyCompactItemize}
