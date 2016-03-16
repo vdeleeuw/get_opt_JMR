@@ -3,7 +3,7 @@ Gestion des arguments en lignes de commandes en C++ :
 
 Principe :
 Les classes, l'héritage, les méthodes et les variables sont décrites dans la documentation générée avec doxygen. 
-Pour la consulter il faut aller dans sol3/doc/html/ et ouvrir index.html avec votre navigateur internet.
+Pour la consulter il faut aller dans /doc/html/ et ouvrir index.html avec votre navigateur internet.
 
 Utilisation :
 Tout d'abord, si vous le désirez, modifier le main.cpp pour ajouter des arguments ou modifier ceux déjà présents 
@@ -29,7 +29,3 @@ Executer le programme de test CPPUNIT : ./bin/test_sol3 ;
 Manuel :
 On peut accéder au man de la solution 3 lorsqu'on essaye d'exécuter le programme avec un mauvais argument, 
 ainsi on aura accès à la description : du programme, de l'exécution et des types.
-
- 
-Point(s) fort(s) :
-1) Cette solution comporte une classe cppunit pour permettre de tester la fiabilité du programme ; 
