@@ -15,17 +15,17 @@ lance qu'en option longue (ex: : --pstr=test1).
 Cas particulier : le booléen peut s'écrire sans valeur et donc sa valeur sera 'true', ce sera donc un flag. 
 
 Le programme s'utilise de la manière suivante :
-./bin/sol3 -pbool true (ou --pbool=true) --pint=12 (ou -pint 12) etc ... (expliqué plus en détails dans le manuel);
+./bin/projet -pbool true (ou --pbool=true) --pint=12 (ou -pint 12) etc ... (expliqué plus en détails dans le manuel);
 Cas particulier :il existe un type fl flag, lancer le programme avec un -bool sans valeur.
 
-Commandes (se placer dans /sol3) :
+Commandes (se placer dans /projet) :
 Compiler : make ;
-Executer : ./bin/sol3 -arg val ou --arg=val ;
+Executer : ./bin/projet -arg val ou --arg=val ;
 Génerer la documentation : make doc ;
 Nettoyer le dossier : make mrproper ;
 Compiler le fichier de test CPPUNIT : make test ;
-Executer le programme de test CPPUNIT : ./bin/test_sol3 ;
+Executer le programme de test CPPUNIT : ./bin/test_projet ;
 
 Manuel :
-On peut accéder au man de la solution 3 lorsqu'on essaye d'exécuter le programme avec un mauvais argument, 
+On peut accéder au man du projet lorsqu'on essaye d'exécuter le programme avec un mauvais argument, 
 ainsi on aura accès à la description : du programme, de l'exécution et des types.
